@@ -1,0 +1,35 @@
+body {
+    background-color: #f2f9f2;
+    text-align: center;
+    font-family: Arial;
+}
+h1, h2 {
+    color: #2e7d32;
+}
+.card {
+    background: white;
+    border: 2px solid #2e7d32;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 8px;
+}
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+table {
+    margin: 20px auto;
+    background: white;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px 12px;
+}
+th {
+background-color: #4caf50;
+ color: white;
+}
