@@ -1,0 +1,72 @@
+<!-- 
+  Name: Faha Ali
+  Roll Number: 26I-3258
+  Section: E
+  Page: Available Pets
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Available Pets - Pet Adoption</title>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="pets.html" class="active">Available Pets</a>
+    <a href="adopt.html">Adopt Now</a>
+    <a href="care.html">Pet Care &amp; Info</a>
+</div>
+
+<h1>MEET OUR RESCUED PETS</h1>
+<p>Click a category below to filter our furry friends.</p>
+
+<!-- Filter Buttons (Will work with JavaScript in Step 5) -->
+<div style="margin-bottom: 15px;">
+    <button onclick="filterPets('all')">All Pets</button>
+    <button onclick="filterPets('dog')">Dogs</button>
+    <button onclick="filterPets('cat')">Cats</button>
+</div>
+
+<!-- Pet 1: Luna -->
+<div class="card pet-card" data-category="dog">
+    <img src="dog.png" width="150" height="120" alt="Luna">
+    <h3>Name: Luna</h3>
+    <p>Age: 2 yrs | Breed: Lab</p>
+    <p>Friendly, playful &amp; vaccinated</p>
+    <a href="adopt.html"><button>Adopt Luna</button></a>
+</div>
+
+<!-- Pet 2: Max -->
+<div class="card pet-card" data-category="dog">
+    <div style="font-size: 75px; line-height: 120px;">🐕</div>
+    <h3>Name: Max</h3>
+    <p>Age: 3 yrs | Breed: German Shepherd</p>
+    <p>Loyal, smart &amp; house-trained</p>
+    <a href="adopt.html"><button>Adopt Max</button></a>
+</div>
+
+<!-- Pet 3: Milo -->
+<div class="card pet-card" data-category="cat">
+    <div style="font-size: 75px; line-height: 120px;">🐈</div>
+    <h3>Name: Milo</h3>
+    <p>Age: 1 yr | Breed: Persian Mix</p>
+    <p>Calm, affectionate &amp; indoor cat</p>
+    <a href="adopt.html"><button>Adopt Milo</button></a>
+</div>
+
+<!-- Pet 4: Bella -->
+<div class="card pet-card" data-category="cat">
+    <div style="font-size: 75px; line-height: 120px;">🐱</div>
+    <h3>Name: Bella</h3>
+    <p>Age: 2 yrs | Breed: Tabby Cat</p>
+    <p>Gentle, curious &amp; good with kids</p>
+    <a href="adopt.html"><button>Adopt Bella</button></a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

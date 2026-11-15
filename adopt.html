@@ -1,0 +1,68 @@
+<!-- 
+  Name: Faha Ali
+  Roll Number: 26I-3258
+  Section: E
+  Page: Adoption Application
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Adoption Application - Pet Adoption</title>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="pets.html">Available Pets</a>
+    <a href="adopt.html" class="active">Adopt Now</a>
+    <a href="care.html">Pet Care &amp; Info</a>
+</div>
+
+<h1>ADOPTION APPLICATION</h1>
+<p>Fill out the form below to give a rescued pet a loving forever home.</p>
+
+<div class="form-card">
+    <form id="adoptionForm" onsubmit="submitAdoptionForm(event)">
+        <label for="applicantName">Your Full Name:</label>
+        <input type="text" id="applicantName" placeholder="e.g. Faha Ali" required>
+
+        <label for="applicantEmail">Email Address:</label>
+        <input type="email" id="applicantEmail" placeholder="e.g. faha@example.com" required>
+
+        <label for="applicantPhone">Phone Number:</label>
+        <input type="tel" id="applicantPhone" placeholder="e.g. 0300-1234567" required>
+
+        <label for="petSelect">Select Pet to Adopt:</label>
+        <select id="petSelect">
+            <option value="Luna">Luna (2 yrs - Lab)</option>
+            <option value="Max">Max (3 yrs - German Shepherd)</option>
+            <option value="Milo">Milo (1 yr - Persian Mix)</option>
+            <option value="Bella">Bella (2 yrs - Tabby Cat)</option>
+        </select>
+
+        <label for="homeType">Your Living Environment:</label>
+        <select id="homeType">
+            <option value="House with Yard">House with Yard</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Farmhouse / Open Area">Farmhouse / Open Area</option>
+        </select>
+
+        <label for="reason">Why would you like to adopt?</label>
+        <textarea id="reason" rows="3" placeholder="Tell us a little about your home and experience with pets..." required></textarea>
+
+        <br><br>
+        <div style="text-align: center;">
+            <button type="submit">Submit Application</button>
+        </div>
+    </form>
+
+    <!-- Confirmation Message (Will appear via JavaScript in Step 5) -->
+    <div id="confirmationBox" class="success-message"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

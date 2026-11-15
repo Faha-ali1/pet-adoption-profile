@@ -1,18 +1,24 @@
+/* --- Original Lab 11 Styles (Kept Intact) --- */
 body {
     background-color: #f2f9f2;
     text-align: center;
     font-family: Arial;
+    margin: 0;
 }
+
 h1, h2 {
     color: #2e7d32;
 }
+
 .card {
     background: white;
     border: 2px solid #2e7d32;
     display: inline-block;
     padding: 15px;
     border-radius: 8px;
+    margin: 10px;
 }
+
 button {
     background-color: #4caf50;
     color: white;
@@ -21,15 +27,89 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #2e7d32;
+}
+
 table {
     margin: 20px auto;
     background: white;
     border-collapse: collapse;
 }
+
 th, td {
     padding: 8px 12px;
 }
+
 th {
-background-color: #4caf50;
- color: white;
+    background-color: #4caf50;
+    color: white;
+}
+
+/* --- Lab 12 Navigation & Shared Styles --- */
+.navbar {
+    background-color: #2e7d32;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: #4caf50;
+}
+
+/* Shared form styles for adopt.html */
+.form-card {
+    background: white;
+    border: 2px solid #2e7d32;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 400px;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.form-card label {
+    display: block;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="tel"],
+.form-card select,
+.form-card textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #2e7d32;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.success-message {
+    display: none;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #4caf50;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
 }
